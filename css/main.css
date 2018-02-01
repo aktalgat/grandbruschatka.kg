@@ -47,8 +47,8 @@ a:focus, a:hover {
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin-bottom: 0;
     text-transform: uppercase;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: black;
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #mainNav .navbar-toggler {
@@ -232,8 +232,8 @@ img::-moz-selection {
     #mainNav.navbar-shrink {
         padding-top: 10px;
         padding-bottom: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        background: black;
+        /*border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+        background-color: rgba(0, 0, 0, 0.7);
     }
     #mainNav .nav-link.active {
         outline: none;
