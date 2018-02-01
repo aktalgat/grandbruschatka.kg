@@ -22,21 +22,13 @@ h6 {
     font-weight: 700;
     margin: 0 0 35px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 p {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 0 25px;
-}
-
-@media (min-width: 768px) {
-    p {
-        font-size: 18px;
-        line-height: 1.6;
-        margin: 0 0 35px;
-    }
 }
 
 a {
@@ -91,32 +83,6 @@ a:focus, a:hover {
     background-color: transparent;
 }
 
-@media (min-width: 992px) {
-    #mainNav {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-        -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-        transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-        letter-spacing: 1px;
-        border-bottom: none;
-        background: transparent;
-    }
-    #mainNav.navbar-shrink {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        background: black;
-    }
-    #mainNav .nav-link.active {
-        outline: none;
-        background-color: rgba(255, 255, 255, 0.3);
-    }
-    #mainNav .nav-link.active:hover {
-        color: white;
-    }
-}
-
 .masthead {
     display: table;
     width: 100%;
@@ -124,8 +90,8 @@ a:focus, a:hover {
     padding: 200px 0;
     text-align: center;
     color: white;
-    background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
-    background-color: black;
+    background: url("../img/1.jpg") no-repeat bottom center scroll;
+    background-color: saddlebrown;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -139,23 +105,39 @@ a:focus, a:hover {
 
 .masthead .intro-body .brand-heading {
     font-size: 50px;
+    font-weight: 600;
 }
 
 .masthead .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-@media (min-width: 768px) {
-    .masthead {
-        height: 100%;
-        padding: 0;
-    }
-    .masthead .intro-body .brand-heading {
-        font-size: 100px;
-    }
-    .masthead .intro-body .intro-text {
-        font-size: 22px;
-    }
+.btn {
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.btn-default {
+    color: #42DCA3;
+    border: 1px solid #42DCA3;
+    background-color: transparent;
+}
+
+.btn-default:focus, .btn-default:hover {
+    color: black;
+    border: 1px solid #42DCA3;
+    outline: none;
+    background-color: #42DCA3;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
 }
 
 .btn-circle {
@@ -199,60 +181,6 @@ a:focus, a:hover {
     height: 300px;
 }
 
-@media (min-width: 992px) {
-    .content-section {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
-    #map {
-        height: 350px;
-    }
-}
-
-.btn {
-    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    border-radius: 0;
-}
-
-.btn-default {
-    color: #42DCA3;
-    border: 1px solid #42DCA3;
-    background-color: transparent;
-}
-
-.btn-default:focus, .btn-default:hover {
-    color: black;
-    border: 1px solid #42DCA3;
-    outline: none;
-    background-color: #42DCA3;
-}
-
-ul.banner-social-buttons {
-    margin-top: 0;
-}
-
-@media (max-width: 1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media (max-width: 767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
-}
-
 footer {
     padding: 50px 0;
 }
@@ -280,4 +208,79 @@ img::selection {
 
 img::-moz-selection {
     background: transparent;
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0 0 35px;
+    }
+}
+
+@media (min-width: 992px) {
+    #mainNav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        letter-spacing: 1px;
+        border-bottom: none;
+        background: transparent;
+    }
+    #mainNav.navbar-shrink {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background: black;
+    }
+    #mainNav .nav-link.active {
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    #mainNav .nav-link.active:hover {
+        color: white;
+    }
+}
+
+@media (min-width: 768px) {
+    .masthead {
+        height: 100%;
+        padding: 0;
+    }
+    .masthead .intro-body .brand-heading {
+        font-size: 80px;
+    }
+    .masthead .intro-body .intro-text {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .content-section {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    #map {
+        height: 350px;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
 }
