@@ -40,3 +40,10 @@
     $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+var mymap = L.map('map').setView([42.86319, 74.53535], 15);
+var marker = L.marker([42.86319, 74.53535]).addTo(mymap);
+marker.bindPopup("<b>Grandbruschatka</b><br>ул. Воровского 1<br>пер. Л. Толстого/Т. Фрунзе").openPopup();
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(mymap);

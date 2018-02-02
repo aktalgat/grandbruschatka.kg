@@ -183,6 +183,8 @@ ul.banner-social-buttons {
 
 footer {
     padding: 50px 0;
+    background-color: black;
+    color: white;
 }
 
 footer p {
@@ -208,6 +210,13 @@ img::selection {
 
 img::-moz-selection {
     background: transparent;
+}
+
+.contact-item {
+    color: black;
+    padding-top: 30px;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 @media (min-width: 768px) {
