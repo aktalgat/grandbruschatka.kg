@@ -10,17 +10,8 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
-          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-          crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
-            integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
-            crossorigin=""></script>
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body id="page-top">
@@ -87,17 +78,19 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
+    <section id="contact" class="bg-gray text-center">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8">
                     <div id="map"></div>
-
                 </div>
-                <div class="col-sm-4">
-                    <div class="contact-item">0555 111 222</div>
-                    <div class="contact-item">0700 111 222</div>
-                    <div class="contact-item">0777 111 222</div>
+                <div class="col-sm-4 contact">
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i> г. Бишкек, ул. Воровского 1, <br> пер. Л. Тостого/Т. Фрунзе</li>
+                        <li><i class="fa fa-whatsapp"></i> 0555 111 222</li>
+                        <li><i class="fa fa-phone"></i> 0777 111 222</li>
+                        <li><i class="fa fa-phone"></i> 0700 111 222</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -110,11 +103,11 @@
         </div>
     </footer>
 
-
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper-1.12.9.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
