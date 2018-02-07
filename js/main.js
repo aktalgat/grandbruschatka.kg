@@ -39,6 +39,38 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
+
+    $('.mag-inst').magnificPopup({
+        items: [
+            {src: 'img/product/1.jpg'},
+            {src: 'img/product/2.jpg'},
+            {src: 'img/product/3.jpg'},
+            {src: 'img/product/4.jpg'},
+            {src: 'img/product/5.jpg'},
+            {src: 'img/product/6.jpg'},
+            {src: 'img/product/7.jpg'},
+            {src: 'img/product/8.jpg'}
+        ],
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 6]
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+        }
+    });
+
+    $('.gallery-item').on('click', function(event) {
+        var num = $(this).attr('data-number');
+        console.log(num);
+        event.preventDefault();
+        $('.mag-inst').magnificPopup('open', num);
+    });
+
 })(jQuery); // End of use strict
 
 var mymap = L.map('map').setView([42.86319, 74.53535], 15);
