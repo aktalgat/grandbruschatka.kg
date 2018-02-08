@@ -225,6 +225,11 @@ img::-moz-selection {
     border: 1px solid #ccc;
 }
 
+.service-photo {
+    border: 1px solid rgba(0,0,0,.125);
+    overflow: hidden;
+}
+
 @media (max-width: 767px) {
     .contact ul li {
         padding: 8px 0 8px 30px;
