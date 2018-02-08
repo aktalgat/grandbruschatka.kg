@@ -106,7 +106,7 @@ a:focus, a:hover {
     font-weight: 600;
 }
 
-.btn {
+/*.btn {
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
     -webkit-transition: all 0.3s ease-in-out;
@@ -114,7 +114,7 @@ a:focus, a:hover {
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
     border-radius: 0;
-}
+}*/
 
 .btn-circle {
     font-size: 26px;
