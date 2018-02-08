@@ -4,7 +4,6 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    /*color: black;*/
     background-color: white;
 }
 
@@ -12,20 +11,6 @@ html {
     width: 100%;
     height: 100%;
 }
-/*
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    margin: 0 0 35px;
-    letter-spacing: 1px;
-    !*text-transform: uppercase;*!
-}
-*/
 
 p {
     font-size: 16px;
@@ -42,7 +27,7 @@ a {
 
 a:focus, a:hover {
     text-decoration: none;
-    color: #1d9b6c;
+    /*color: #1d9b6c;*/
 }
 
 .card-body {
@@ -55,10 +40,8 @@ a:focus, a:hover {
 }
 
 #mainNav {
-    /*font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
     margin-bottom: 0;
     text-transform: uppercase;
-    /*border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -101,8 +84,7 @@ a:focus, a:hover {
     padding: 200px 0;
     text-align: center;
     color: white;
-    background: url("../img/1.jpg") no-repeat bottom center scroll;
-    background-color: saddlebrown;
+    background: url("../img/1.jpg") no-repeat bottom center scroll saddlebrown;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -134,23 +116,6 @@ a:focus, a:hover {
     border-radius: 0;
 }
 
-.btn-default {
-    color: #42DCA3;
-    border: 1px solid #42DCA3;
-    background-color: transparent;
-}
-
-.btn-default:focus, .btn-default:hover {
-    color: black;
-    border: 1px solid #42DCA3;
-    outline: none;
-    background-color: #42DCA3;
-}
-
-ul.banner-social-buttons {
-    margin-top: 0;
-}
-
 .btn-circle {
     font-size: 26px;
     width: 55px;
@@ -172,15 +137,10 @@ ul.banner-social-buttons {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.content-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 .bg-gray {
     padding: 50px 0;
     font-size: 14px;
-    color: #6f6f6f;
+    color: #313131;
     background-color: #f8f8f8;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -192,28 +152,13 @@ ul.banner-social-buttons {
     border-bottom: 1px solid #fff;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-
-.download-section {
-    color: white;
-    background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
-    background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#map {
-    width: 100%;
-    height: 300px;
-    border: 1px solid #ccc;
+    color: #313131;
 }
 
 footer {
     padding: 25px 0;
     background-color: #ffffff;
-    color: #6f6f6f;
+    color: #313131;
     border-top: 1px solid #f1f1f1;
 }
 
@@ -268,35 +213,29 @@ img::-moz-selection {
     text-align: justify;
 }
 
-.address {
-    font-size: 22px;
-    padding: 8px 0 8px 35px;
-}
-
-.my-gallery {
-    width: 100%;
-    float: left;
-}
-.my-gallery img {
-    width: 100%;
-    height: auto;
-}
-.my-gallery figure {
-    display: block;
-    float: left;
-    margin: 0 5px 5px 0;
-    width: 300px;
-}
-.my-gallery figcaption {
-    display: none;
-}
-
 .portfolio-item {
     margin-bottom: 30px;
 }
 
-.pagination {
-    margin-bottom: 30px;
+.section-title {
+    font-size: 30px;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 767px) {
+    .contact ul li {
+        padding: 8px 0 8px 30px;
+        font-size: 16px;
+    }
+
+    .contact ul li i {
+        top: 11px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -304,6 +243,21 @@ img::-moz-selection {
         font-size: 18px;
         line-height: 1.6;
         margin: 0 0 35px;
+    }
+
+    .masthead {
+        height: 100%;
+        padding: 0;
+    }
+    .masthead .intro-body .brand-heading {
+        font-size: 80px;
+    }
+    .masthead .intro-body .intro-text {
+        font-size: 40px;
+    }
+
+    .section-title {
+        font-size: 40px;
     }
 }
 
@@ -321,7 +275,6 @@ img::-moz-selection {
     #mainNav.navbar-shrink {
         padding-top: 10px;
         padding-bottom: 10px;
-        /*border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
         background-color: rgba(0, 0, 0, 0.7);
     }
     #mainNav .nav-link.active {
@@ -331,45 +284,8 @@ img::-moz-selection {
     #mainNav .nav-link.active:hover {
         color: white;
     }
-}
 
-@media (min-width: 768px) {
-    .masthead {
-        height: 100%;
-        padding: 0;
-    }
-    .masthead .intro-body .brand-heading {
-        font-size: 80px;
-    }
-    .masthead .intro-body .intro-text {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 992px) {
-    /*.content-section {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }*/
     #map {
         height: 350px;
-    }
-}
-
-
-@media (max-width: 1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media (max-width: 767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
     }
 }
