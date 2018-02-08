@@ -42,14 +42,14 @@
 
     $('.mag-inst').magnificPopup({
         items: [
-            {src: 'img/product/1.jpg'},
-            {src: 'img/product/2.jpg'},
-            {src: 'img/product/3.jpg'},
-            {src: 'img/product/4.jpg'},
-            {src: 'img/product/5.jpg'},
-            {src: 'img/product/6.jpg'},
-            {src: 'img/product/7.jpg'},
-            {src: 'img/product/8.jpg'}
+            {src: 'img/product/1-small.jpg'},
+            {src: 'img/product/2-small.jpg'},
+            {src: 'img/product/3-small.jpg'},
+            {src: 'img/product/4-small.jpg'},
+            {src: 'img/product/5-small.jpg'},
+            {src: 'img/product/6-small.jpg'},
+            {src: 'img/product/7-small.jpg'},
+            {src: 'img/product/8-small.jpg'}
         ],
         type: 'image',
         tLoading: 'Loading image #%curr%...',
@@ -66,7 +66,6 @@
 
     $('.gallery-item').on('click', function(event) {
         var num = $(this).attr('data-number');
-        console.log(num);
         event.preventDefault();
         $('.mag-inst').magnificPopup('open', num);
     });
