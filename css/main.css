@@ -53,7 +53,8 @@ a:focus, a:hover {
 }
 
 #mainNav .navbar-brand {
-    font-weight: 700;
+    font-weight: 600;
+    text-transform: none;
 }
 
 #mainNav a {
@@ -232,6 +233,9 @@ img::-moz-selection {
 
     .contact ul li i {
         top: 11px;
+    }
+    .nav-logo {
+        display: none;
     }
 }
 
