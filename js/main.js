@@ -42,6 +42,7 @@
 
     $('.mag-inst').magnificPopup({
         items: [
+            {src: 'img/product/9-small.jpg'},
             {src: 'img/product/1-small.jpg'},
             {src: 'img/product/2-small.jpg'},
             {src: 'img/product/3-small.jpg'},
