@@ -76,6 +76,40 @@
         $('.mag-inst').magnificPopup('open', num);
     });
 
+    $('.mag-inst-work').magnificPopup({
+        items: [
+            {src: 'img/work/1-small.jpg'},
+            {src: 'img/work/2-small.jpg'},
+            {src: 'img/work/3-small.jpg'},
+            {src: 'img/work/4-small.jpg'},
+            {src: 'img/work/5-small.jpg'},
+            {src: 'img/work/6-small.jpg'},
+            {src: 'img/work/7-small.jpg'},
+            {src: 'img/work/8-small.jpg'},
+            {src: 'img/work/9-small.jpg'},
+            {src: 'img/work/10-small.jpg'},
+            {src: 'img/work/11-small.jpg'},
+            {src: 'img/work/12-small.jpg'}
+        ],
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 6]
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+        }
+    });
+
+    $('.gallery-item-work').on('click', function(event) {
+        var num = $(this).attr('data-number');
+        event.preventDefault();
+        $('.mag-inst-work').magnificPopup('open', num);
+    });
+
 })(jQuery); // End of use strict
 
 var mymap = L.map('map').setView([42.86319, 74.53535], 15);
